@@ -8,6 +8,14 @@ A simple Python script for extracting audio embeddings.
 - Transformers
 - fairseq
 
+## Model
+
+Download the provided model
+
+- [Download Link](https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_large.pt)
+- [Google Drive]
+- [Huggingface]
+
 ## Installation
 
 ```bash
@@ -19,7 +27,7 @@ pip install -r requirements.txt
 Here's an example of how you can use audio_embeddings:
 
 ```
-python audio_embedding.py -i short_sample.wav -o short.npy -b 1280 -f 16000
+python audio_embedding.py -i demo/sample_audio.wav -o outputs/short.npy -b 1280 -f 16000
 ```
 
 ```
@@ -38,6 +46,8 @@ optional arguments:
 ## To-Do
 
 - Clipping silence
+- Model downloader
+- Drop duplicate rows and columns
 
 ## License
 
