@@ -10,7 +10,7 @@ A simple Python script for extracting audio embeddings.
 
 ## Model
 
-Download the provided model
+Download the provided model and put into `./model` folder.
 
 - [Download Link](https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_large.pt)
 - [Google Drive](https://drive.google.com/file/d/1s9MpdjX41jfJQwzj1FrrfD5NJhTS8ZqM/view?usp=sharing)
