@@ -13,8 +13,8 @@ A simple Python script for extracting audio embeddings.
 Download the provided model
 
 - [Download Link](https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_large.pt)
-- [Google Drive]
-- [Huggingface]
+- [Google Drive](https://drive.google.com/file/d/1s9MpdjX41jfJQwzj1FrrfD5NJhTS8ZqM/view?usp=sharing)
+- [Huggingface](https://huggingface.co/mertcobanov/cobanov-weights/resolve/main/wav2vec_large.pt)
 
 ## Installation
 
