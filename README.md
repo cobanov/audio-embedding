@@ -42,6 +42,42 @@ optional arguments:
   -b BLOCK, --block BLOCK           Block length
   -f FREQ, --freq FREQ              Audio file frequency
 ```
+### Functional way
+
+```python
+from audio_embedding import extract_embeddings
+from model_engine import get_model, get_processor
+from utils import concat_and_rescale, save_embeddings
+
+import pandas as pd
+import numpy as np
+import uuid
+
+AUDIO_PATH = r"./demo/sample_audio.wav"
+OUTPUT_PATH = f"./outputs/embedding_{uuid.uuid4()}"
+
+BLOCK_LENGTH = 1280
+TARGET_SR = 16000
+
+model = get_model()
+processor = get_processor()
+
+# Extract Embeddings
+raw_embeddings = extract_embeddings(
+    audio_path=AUDIO_PATH,
+    model=model,
+    processor=processor,
+    block_length=BLOCK_LENGTH,
+    target_sr=TARGET_SR,
+)
+
+# Embedding post-processing
+embeddings = concat_and_rescale(raw_embeddings)
+print(embeddings.shape)
+
+# Save Embeddings
+save_embeddings(OUTPUT_PATH, embeddings)
+```
 
 ## To-Do
 
