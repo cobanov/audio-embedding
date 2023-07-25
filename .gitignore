@@ -128,8 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-*.pt
-*.wav
-*.csv
-*.ipynb
-*.npy
+outputs/*.npy
+model/*.pt
